@@ -20,23 +20,23 @@
 " INSERT 模式
 "----------------------------------------------------------------------
 inoremap <c-h> <BS>
-inoremap <c-j> <d-b>
-inoremap <c-k> <d-w>
+inoremap <c-j> <c-o>db
+inoremap <c-k> <c-o>dw
 inoremap <c-l> <del>
 
 inoremap <m-h> <left>
 inoremap <m-j> <down>
 inoremap <m-k> <up>
 inoremap <m-l> <right>
-inoremap <m-a> 0
-inoremap <m-e> $
+inoremap <m-a> <c-o>0
+inoremap <m-e> <c-o>$
 
 "----------------------------------------------------------------------
 " NORMAL 模式
 "----------------------------------------------------------------------
 nnoremap <c-h> <BS>
-nnoremap <c-j> <d-b>
-nnoremap <c-k> <d-w>
+nnoremap <c-j> db
+nnoremap <c-k> dw
 nnoremap <c-l> <del>
 
 nnoremap <m-h> b
@@ -46,7 +46,7 @@ nnoremap <m-l> w
 nnoremap <m-a> 0
 nnoremap <m-e> $
 
-nnoremap <s-k> <ESC>i<CR><ESC>
+nnoremap <s-k> <ESC>a<CR><ESC>
 
 
 "----------------------------------------------------------------------
@@ -64,10 +64,6 @@ vnoremap <m-e> $
 "----------------------------------------------------------------------
 " 命令模式的快速移动
 "----------------------------------------------------------------------
-cnoremap <c-f> <c-d>
-cnoremap <c-b> <left>
-cnoremap <c-d> <del>
-cnoremap <c-_> <c-k>
 
 cnoremap <m-h> <left>
 cnoremap <m-j> <down>
